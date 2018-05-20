@@ -3,8 +3,6 @@
  */
 .site-header {
   background-color: #333;
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
@@ -33,8 +31,8 @@
 }
 
 .site-nav {
+  margin-top: -8px;
   float: right;
-  line-height: $base-line-height * $base-font-size * 2.25;
 
   .nav-trigger {
       display: none;
@@ -214,6 +212,7 @@
 
 .post-link {
   display: block;
+  color: #333333;
   @include relative-font-size(1.5);
 }
 
@@ -238,6 +237,8 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
+  text-justify: inter-word;
+  text-align: justify;
 
   h2 {
     @include relative-font-size(2);
@@ -262,4 +263,10 @@
       @include relative-font-size(1.125);
     }
   }
+}
+
+.rss-subscribe {
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 150px;
 }

@@ -3,7 +3,13 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-
+jsarr:
+- jquery-3.3.1.min.js
+- oxshxll.js
 ---
 
-{% asset %}
+{% for js in page.jsarr %}
+  <script type="text/javascript">
+  {% include {{ js }} %}
+  </script>
+{% endfor %}

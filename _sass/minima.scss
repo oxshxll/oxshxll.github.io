@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import "bootstrap";
+@import "font-awesome";
 // Define defaults for each variable.
 
 $base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
@@ -45,7 +47,21 @@ $on-laptop:        800px !default;
 
 // Import partials.
 @import
+  "bootstrap",
   "minima/base",
+  "font-awesome",
   "minima/layout",
   "minima/syntax-highlighting"
 ;
+
+/*/ News Feed /*/
+.news-feeed {
+  width: 25vw;
+  float: right;
+  margin-left: 20px;
+}
+.news-feed-header {
+  width: 20vw;
+  text-align: center;
+  margin-left: -0.5vw;
+}
